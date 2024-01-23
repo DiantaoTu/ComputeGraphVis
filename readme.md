@@ -25,7 +25,7 @@ compute_graph.add_backward_fn_attrs(loss)
 
 loss.backward()
 
-dot = compute_graph.get_dot(z)
+dot = compute_graph.get_dot(loss)
 dot.format = 'png'
 dot.render('visualize')
 ```
